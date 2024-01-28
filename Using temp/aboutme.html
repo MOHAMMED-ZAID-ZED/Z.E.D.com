@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZED Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="finallogo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="Cource.html">Cources</a></li>
+                    <li><a href="Contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>About Me</h1>
+    </section>
+
+
+    <!--about Me conetent  NOT FINISH-->
+
+<section class="about-me">
+    <div class="row">
+        <div class="about-col">
+            <h1>About Zaid, Founder of Zaid Education (Z.E.D)</h1>
+            <p>Hi there! 👋 I'm Zaid, the brains of Z.E.D, a FREE learning platform dedicated to dispelling internet safety and cybersecurity. <br> <br> I am a student studying in the International School Of Älmhult, which is an IB school where in MYP 5 students are told to do a personal project and this website is a part of my personal project.</p>
+            <h2>A Passion For Technology And Education</h2>
+            <p>Having grown up surrounded by technology, I became fascinated by the continually evolving digital setting, which inspired me to set out on a mission to raise awareness of the import of cybersecurity. While balancing extracurricular and classes as a student, I managed to turn my passion for technology into a worthwhile enterprise. </p>
+            <h3>Why Cybersecurity and Online Threats?</h3>
+            <p>It is impossible to understand the risks with the evolving online network in a world where more and more people use the online web in their everyday life. Unfortunately, a lot of people don't realise how dangerous it can be. By offering clear-cut and useful cybersecurity insights, Z.E.D seeks to change that and enable everyone to safely navigate the digital world.            </p>
+            <h4>Join Me on this Educational Journey</h4>
+            <p>I welcome you to go along with me on this FREE educational journey. In this website I have provided some basic but important information, this information will help you whether you're a professional, student, or just interested in learning more about the digital world.
+            </p>
+           
+        </div>
+        <div class="about-col">
+            <img src="zaid.jpeg">
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--Contact Me-->
+
+<section class="footer">
+    <h4>Contact Me</h4>
+    <p> ZED.2008.2024@gmail.com</p>
+</section>
+
+<script>
+   
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+     function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+
+</body>
+</html>

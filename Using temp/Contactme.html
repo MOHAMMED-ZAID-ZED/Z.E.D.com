@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZED Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="finallogo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="Cource.html">Cources</a></li>
+                    <li><a href="Contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Contact Me</h1>
+    </section>
+
+<!-- contact me page-->
+
+<section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2177.4016365552825!2d14.160527773413603!3d56.553774134883184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465134af99e38383%3A0xfd572717856e52db!2sThe%20International%20School%20of%20Almhult!5e0!3m2!1sen!2sse!4v1704161743311!5m2!1sen!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-me">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <spam>
+                    <h5>Stenhuggarevägen, International School Of Älmhult</h5>
+                    <p>34331 Älmhult</p>
+                </spam>
+            </div>
+            <div>
+                <spam>
+                    <h5>ZED.2008.2024@gmail.com</h5>
+                    <p>Don´t hesitate to send a email if you have any questions</p>
+                </spam>
+            </div>
+            
+        </div>
+        <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">subject</label>
+                        <input type="subject" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Your Message</label>
+                        <textarea id="comment" name="comment" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">POST COMMENT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</section>
+
+
+<!--Contact Me-->
+
+<section class="fooer">
+    <h4>Contact Me</h4>
+    <p> ZED.2008.2024@gmail.com</p>
+</section>
+
+<script>
+   
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+     function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZED Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="finallogo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="Cource.html">Cources</a></li>
+                    <li><a href="Contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Courses</h1>
+    </section>
+
+<!--course-->
+
+    <section>
+        <div class="cource">
+            <h1>Courses Offered</h1>
+            <p>More course may be added later on</p>
+            <!-- Recommendation -->
+            <p> <b>RECOMENDATION: </b>You <u><b>may</b></u> understand better if you take the <b>cybersecurity course</b> first and then the <b>online threats course</b>.</p>
+            <div class="row">
+                <div class="course-col">
+                    <a href="cybersecurity.html">
+                        <h3>Cybersecurity</h3>
+                        <p>In this course, you'll learn all about cybersecurity—what it is, why it's important, and how to stay safe online. Discover the potential risks of not being aware of cybersecurity, and pick up practical tips to boost your online security. Join Me to make your online experience safer and more secure!</p>   
+                    </a>
+                </div>
+                <div class="course-col">
+                    <a href="online.html">
+                        <h3>Online Threats</h3>
+                        <p>In this course, you'll explore the world of online threats—understanding what they are, the potential consequences of being unaware, and gaining useful tips to stay alert. Join ME to enhance your awareness and safeguard your online presence.</p>        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+<!--Contact Me-->
+
+<section class="foter">
+    <h4>Contact Me</h4>
+    <p> ZED.2008.2024@gmail.com</p>
+</section>
+
+<script>
+   
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+     function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+
+</body>
+</html>
